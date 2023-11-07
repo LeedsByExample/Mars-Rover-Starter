@@ -30,7 +30,7 @@ class Rover {
             this.mode = message.commands[i].value;
          } else if (message.commands[i].commandType === "STATUS_CHECK") {
             response.results.push({completed: true, roverStatus: {mode: this.mode, generatorWatts: this.generatorWatts, position: this.position}})
-         }  //response.results.push(message.commands[i]); //message.commands[i] needs to be replaced w object i've built, directions per textbook
+         }  
       };
 
       return response;
